@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  font-size: 62.5%;
+
+  --font-cinzel: 'Cinzel', serif;
+  --font-inter: 'Inter', sans-serif;
+}
+
+body {
+  height: 100vh;
+  font-size: 1.6rem;
+  background-color: #FFFFFF;
+  background-image: url(../assets/bg-image.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 7.2rem;
+  padding-top: 20.0rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.content h1 {
+  font-family: var(--font-cinzel);
+  font-weight: 700;
+  font-size: 6.4rem;
+  line-height: 8.6rem;
+  color: #151718;
+  margin-bottom: 0.4rem
+}
+
+.content span {
+  color: #DB2777;
+}
+
+.content p {
+  font-family: var(--font-inter);
+  font-weight: 400;
+  font-size: 2.0rem;
+  line-height: 2.4rem;
+  color: rgba(44, 46, 47, 0.9);
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.6rem;
+  font-family: var(--font-cinzel);
+}
+
+.links a {
+  padding: 1.6rem 3.2rem;
+  color: #151718;
+  font-weight: 700;
+  font-size: 2.0rem;
+  line-height: 2.4rem;
+}
+
+.links .button,
+a:hover {
+  background: #DB2777;
+  border-radius: 8.0rem;
+  color: #FFF;
+  text-decoration: none;
+}
+
+.links .button:hover {
+  background: #d96497;
+}
+
+@media (max-width: 31.875rem) {
+  .content h1 {
+    font-size: 4.5rem;
+    line-height: 6rem;
+  }
+
+  .content p {
+    font-size: 1.7rem;
+    line-height: 1.9rem;
+  }
+}
+
+@media (max-width: 30.625rem) {
+  .links {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 23.563rem) {
+  .content h1 {
+    font-size: 3rem;
+    line-height: 4rem;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
